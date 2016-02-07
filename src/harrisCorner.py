@@ -16,12 +16,12 @@ LENGTH=len(img_data[0])
 
 Iy,Ix = np.gradient(img_data)
 R = [[0 for i in range(LENGTH)] for j in range(WIDTH)]
-gradientMatirx = [[0 for i in range(LENGTH)] for j in range(WIDTH)]
+gradientMatrix = [[0 for i in range(LENGTH)] for j in range(WIDTH)]
 for x in range(WIDTH):
 	for y in range(LENGTH):
 		dx=float(Ix[x][y])
 		dy=float(Iy[x][y])
-		gradientMatirx[x][y]=[dx,dy,np.linalg.norm([dx,dy]),atan2(dy,dx)]
+		gradientMatrix[x][y]=[dx,dy,np.linalg.norm([dx,dy]),atan2(dy,dx)]
 print "Gradient Matrix Generated"
 k=0.04
 threshold=100000
@@ -56,23 +56,5 @@ for corner in possible_corners:
 		color_img.itemset((corner[0], corner[1], 1), 0)
 		color_img.itemset((corner[0], corner[1], 2), 255)
 print "Corners computed"
-# suppressed_cornerList=[]
-# for corner in possible_corners:
-# 		y = corner[0]
-# 		x = corner[1]
-# 		r = corner[2]
-# 		if r > R[y+1][x+1]:
-# 			if r > R[y+1][x]:
-# 				if r > R[y+1][x-1]:
-# 					if r > R[y][x-1]:
-# 						if r > R[y][x+1]:
-# 							if r > R[y-1][x+1]:
-# 								if r > R[y-1][x]:
-# 									if r > R[y-1][x-1]:
-# 										suppressed_cornerList.append(corner)
-# 										color_img.itemset((y, x, 0), 0)
-# 										color_img.itemset((y, x, 1), 0)
-# 										color_img.itemset((y, x, 2), 255)
-#
 cv2.imwrite("d.png", color_img)
-gradientMatirx = np.array(gradientMatirx)
+gradientMatrix = np.array(gradientMatrix)
