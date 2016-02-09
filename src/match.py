@@ -1,6 +1,31 @@
 from descriptor import *
+import numpy as np
 
-harris1 = HarrisExtractor(WINDOW,1)
-harris2 = HarrisExtractor(WINDOW,2)
-features1 = featureExtractor(harris1)
-features2 = featureExtractor(harris2)
+class matcher:
+    def __init__(self,harris1,harris2):
+        self.harris1 = harris1
+        self.harris2 = harris2
+        self.features1, self.features2 = featureExtractor(harris1).get_Descriptors(), featureExtractor(harris2).get_Descriptors()
+        self.N1,self.N2 = len(self.features1), len(self.features2)
+        print self.N1, self.N2
+        self.matching_pairs = []
+
+    def match_point_by_point(self,ratio_Threshold):
+        for i in range(self.N1):
+            first = 1000000000
+            second = 1000000000
+            for j in range(self.N2):
+                if (j,i) not in self.matching_pairs:
+                    distance = float(np.linalg.norm(self.features1[i].flatten()-self.features2[j].flatten()))
+                    print distance
+                    first = min(first,distance)
+                    if first == distance:
+                            first_Match = j
+                    else:
+                        second = min(second,distance)
+                        if second == distance:
+                            second_Match = j
+            ratio = float(second)/float(first)
+            if ratio > ratio_Threshold:
+                self.matching_pairs.append((i,first_Match))
+                print  self.harris1.harris_Points[i],self.harris2.harris_Points[first_Match],first,'matched'

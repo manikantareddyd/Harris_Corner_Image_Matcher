@@ -6,10 +6,12 @@ import sys
 
 class HarrisExtractor:
 	def __init__(self,WINDOW,BIN,i):
-		img = cv2.imread('data/chess.png', 0)
+		img = cv2.imread('data/set1/img'+str(i)+'.png', 0)
+		#img = cv2.imread('data/chess.png', 0)
 		newImg = img.copy()
 		self.color_img = cv2.cvtColor(newImg, cv2.COLOR_GRAY2RGB)
-		img = Image.open('data/chess.png').convert('L')
+		img = Image.open('data/set1/img'+str(i)+'.png').convert('L')
+		#img = Image.open('data/chess.png').convert('L')
 		self.img_data = (np.array(img, dtype = np.float))
 		self.WIDTH = len(self.img_data)
 		self.LENGTH=len(self.img_data[0])
@@ -18,13 +20,12 @@ class HarrisExtractor:
 		self.k=0.04
 		self.WINDOW = WINDOW
 		self.offset = self.WINDOW/2
-		self.bin = BIN*2
-		self.padding = max(self.bin, self.offset)
-		self.threshold=100
+		self.bin = BIN
+		self.padding = max(self.bin*2, self.offset)
+		self.threshold=1000
 		self.thresholded_Responses=[]
 		self.harris_Points=[]
 		print "Values Initialised"
-
 		self.get_Gradient()
 		self.get_Harris_Response()
 		self.get_Harris_Points()
