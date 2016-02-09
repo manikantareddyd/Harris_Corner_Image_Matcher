@@ -7,28 +7,27 @@ class matcher:
         self.harris2 = harris2
         self.features1, self.features2 = featureExtractor(harris1).get_Descriptors(), featureExtractor(harris2).get_Descriptors()
         self.N1,self.N2 = len(self.features1), len(self.features2)
-        print self.N1, self.N2
+        #print self.N1, self.N2
         self.matching_pairs = []
     def match_point_by_point(self,ratio_Threshold):
         for i in range(self.N1):
-            first = 1000000000
-            second = 1000000000
+            first = 100000000000
+            second = 100000000000
             for j in range(self.N2):
-                if (j,i) not in self.matching_pairs:
-                    distance = float(np.linalg.norm(self.features1[i].flatten()-self.features2[j].flatten()))
-                    #print distance
-                    first = min(first,distance)
-                    if first == distance:
-                            first_Match = j
-                    else:
-                        second = min(second,distance)
-                        if second == distance:
-                            second_Match = j
+                distance = float(np.linalg.norm(self.features1[i].flatten()-self.features2[j].flatten()))+1
+                #print distance
+                first = min(first,distance)
+                if first == distance:
+                        first_Match = j
+                else:
+                    second = min(second,distance)
+                    if second == distance:
+                        second_Match = j
             ratio = float(second)/float(first)
             if ratio > ratio_Threshold:
                 self.matching_pairs.append((i,first_Match))
-                print  self.harris1.harris_Points[i],self.harris2.harris_Points[first_Match],first,'matched'
-    def compare_Image(self):
+                #print  self.harris1.harris_Points[i],self.harris2.harris_Points[first_Match],first,'matched'
+    def compare_Image(self,ratio_Threshold):
         newWIDTH = self.harris1.WIDTH
         newLENGTH = 2*self.harris1.LENGTH
         newImg = np.zeros((newWIDTH,newLENGTH,3),np.uint8)
@@ -40,4 +39,4 @@ class matcher:
             pt_a = (int(tkp[i][0]), int(tkp[i][1]))
             pt_b = (int(skp[i][0]+newLENGTH/2), int(skp[i][1]))
             cv2.line(newImg, pt_a, pt_b, (255, 0, 0))
-            cv2.imwrite("lol.png", newImg)
+            cv2.imwrite("Results/set"+str(self.harris1.dir)+"/match_"+str(self.harris1.threshold)+"_"+str(ratio_Threshold)+".png", newImg)

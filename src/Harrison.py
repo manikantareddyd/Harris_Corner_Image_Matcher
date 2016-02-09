@@ -5,13 +5,14 @@ import cv2
 import sys
 
 class HarrisExtractor:
-	def __init__(self,WINDOW,BIN,i):
-		img = cv2.imread('data/set3/img'+str(i)+'.png', 0)
+	def __init__(self,WINDOW,BIN,THRESHOLD,i,DIR):
+		self.dir = DIR
+		img = cv2.imread('data/set'+str(self.dir)+'/img'+str(i)+'.png', 0)
 		#img = cv2.imread('data/chess.png', 0)
 		self.kok=i
 		newImg = img.copy()
 		self.color_img = cv2.cvtColor(newImg, cv2.COLOR_GRAY2RGB)
-		img = Image.open('data/set3/img'+str(i)+'.png').convert('L')
+		img = Image.open('data/set'+str(self.dir)+'/img'+str(i)+'.png').convert('L')
 		#img = Image.open('data/chess.png').convert('L')
 		self.img_data = (np.array(img, dtype = np.float))
 		self.WIDTH = len(self.img_data)
@@ -23,10 +24,10 @@ class HarrisExtractor:
 		self.offset = self.WINDOW/2
 		self.bin = BIN
 		self.padding = max(self.bin*2, self.offset)
-		self.threshold=1000000
+		self.threshold=THRESHOLD
 		self.thresholded_Responses=[]
 		self.harris_Points=[]
-		print "Values Initialised"
+		#print "Values Initialised"
 		self.get_Gradient()
 		self.get_Harris_Response()
 		self.get_Harris_Points()
@@ -38,7 +39,7 @@ class HarrisExtractor:
 				dx=float(self.Ix[x][y])
 				dy=float(self.Iy[x][y])
 				self.gradientMatrix[x][y]=[dx,dy,np.linalg.norm([dx,dy]),atan2(dy,dx)]
-		print "Gradient Matrix Generated"
+		#print "Gradient Matrix Generated"
 
 	def get_Harris_Response(self):
 		IxIx = self.Ix*self.Ix
@@ -57,7 +58,7 @@ class HarrisExtractor:
 				#self.R[x][y] = float(det/trace)
 				if self.R[x][y]>self.threshold:
 					self.thresholded_Responses.append([x,y,self.R[x][y]])
-		print "R values computed"
+		#print "R values computed"
 
 	def get_Harris_Points(self):
 		for corner in self.thresholded_Responses:
@@ -68,9 +69,9 @@ class HarrisExtractor:
 						flag=1
 			if flag!=1:
 				self.harris_Points.append(corner)
-				self.color_img.itemset((corner[0], corner[1], 0), 0)
+				self.color_img.itemset((corner[0], corner[1], 0), 255)
 				self.color_img.itemset((corner[0], corner[1], 1), 0)
-				self.color_img.itemset((corner[0], corner[1], 2), 255)
-		print "harris_Points computed"
-		cv2.imwrite("d"+str(self.kok)+".png", self.color_img)
+				self.color_img.itemset((corner[0], corner[1], 2), 0)
+		#print "harris_Points computed"
+		cv2.imwrite("Results/set"+str(self.dir)+"/imgResult"+str(self.kok)+"_"+str(self.threshold)+".png", self.color_img)
 		self.gradientMatrix = np.array(self.gradientMatrix)
