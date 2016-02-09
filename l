@@ -1,13 +1,8 @@
 s1 = HarrisExtractor(8,4,1)
-s1.get_Gradient()
-s1.get_Harris_Response()
-s1.get_Harris_Points()
-s1 = HarrisExtractor(8,4,3)
-s2.get_Gradient()
-s2.get_Harris_Response()
-s2.get_Harris_Points()
-
-s1 = HarrisExtractor(8,4,1)
 s2 = HarrisExtractor(8,4,3)
 y = matcher(s1,s2)
-y.match_point_by_point()
+y.match_point_by_point(1.2)
+y.compare_Image()
+
+
+threshold 1.2 Experiment with it 

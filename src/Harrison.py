@@ -6,11 +6,12 @@ import sys
 
 class HarrisExtractor:
 	def __init__(self,WINDOW,BIN,i):
-		img = cv2.imread('data/set1/img'+str(i)+'.png', 0)
+		img = cv2.imread('data/set3/img'+str(i)+'.png', 0)
 		#img = cv2.imread('data/chess.png', 0)
+		self.kok=i
 		newImg = img.copy()
 		self.color_img = cv2.cvtColor(newImg, cv2.COLOR_GRAY2RGB)
-		img = Image.open('data/set1/img'+str(i)+'.png').convert('L')
+		img = Image.open('data/set3/img'+str(i)+'.png').convert('L')
 		#img = Image.open('data/chess.png').convert('L')
 		self.img_data = (np.array(img, dtype = np.float))
 		self.WIDTH = len(self.img_data)
@@ -22,7 +23,7 @@ class HarrisExtractor:
 		self.offset = self.WINDOW/2
 		self.bin = BIN
 		self.padding = max(self.bin*2, self.offset)
-		self.threshold=1000
+		self.threshold=1000000
 		self.thresholded_Responses=[]
 		self.harris_Points=[]
 		print "Values Initialised"
@@ -52,8 +53,8 @@ class HarrisExtractor:
 				trace = float(Mxx+Myy)
 				if trace==0:
 					trace=0.01
-				#self.R[x][y] = det - (self.k*(trace**2))
-				self.R[x][y] = float(det/trace)
+				self.R[x][y] = det - (self.k*(trace**2))
+				#self.R[x][y] = float(det/trace)
 				if self.R[x][y]>self.threshold:
 					self.thresholded_Responses.append([x,y,self.R[x][y]])
 		print "R values computed"
@@ -71,5 +72,5 @@ class HarrisExtractor:
 				self.color_img.itemset((corner[0], corner[1], 1), 0)
 				self.color_img.itemset((corner[0], corner[1], 2), 255)
 		print "harris_Points computed"
-		cv2.imwrite("d.png", self.color_img)
+		cv2.imwrite("d"+str(self.kok)+".png", self.color_img)
 		self.gradientMatrix = np.array(self.gradientMatrix)
