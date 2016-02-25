@@ -1,0 +1,457 @@
+****************************************************************************************************
+Working on set1 images
+
+
+************************************************************
+Using a threshold of 10^15 for filteirng Harris Points
+Number of Harris Points in 1st  0
+Number of Harris Points in 2nd  0
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^14 for filteirng Harris Points
+Number of Harris Points in 1st  0
+Number of Harris Points in 2nd  0
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^13 for filteirng Harris Points
+Number of Harris Points in 1st  0
+Number of Harris Points in 2nd  0
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^12 for filteirng Harris Points
+Number of Harris Points in 1st  0
+Number of Harris Points in 2nd  0
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^11 for filteirng Harris Points
+Number of Harris Points in 1st  0
+Number of Harris Points in 2nd  0
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^10 for filteirng Harris Points
+Number of Harris Points in 1st  1
+Number of Harris Points in 2nd  7
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^9 for filteirng Harris Points
+Number of Harris Points in 1st  290
+Number of Harris Points in 2nd  441
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.05 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+************************************************************
+Using a threshold of 10^8 for filteirng Harris Points
+Number of Harris Points in 1st  908
+Number of Harris Points in 2nd  1301
+
+
+Using a threshold of 1.7 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.6 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.5 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.45 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.4 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.35 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.3 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.25 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.2 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.15 for ratio of 1st to 2nd
+Number of matching points found 0
+
+
+Using a threshold of 1.1 for ratio of 1st to 2nd

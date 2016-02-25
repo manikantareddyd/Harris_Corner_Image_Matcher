@@ -3,7 +3,7 @@ import numpy as np
 from math import *
 import cv2
 import sys
-
+from os import mkdir
 class HarrisExtractor:
 	def __init__(self,WINDOW,BIN,THRESHOLD,i,DIR):
 		self.dir = DIR
@@ -25,6 +25,10 @@ class HarrisExtractor:
 		self.bin = BIN
 		self.padding = max(self.bin*2, self.offset)
 		self.threshold=THRESHOLD
+		try:
+			mkdir("Results/set"+str(self.dir)+"/"+str(self.threshold))
+		except:
+			pass
 		self.thresholded_Responses=[]
 		self.harris_Points=[]
 		#print "Values Initialised"
@@ -73,5 +77,5 @@ class HarrisExtractor:
 				self.color_img.itemset((corner[0], corner[1], 1), 0)
 				self.color_img.itemset((corner[0], corner[1], 2), 0)
 		#print "harris_Points computed"
-		cv2.imwrite("Results/set"+str(self.dir)+"/imgResult"+str(self.kok)+"_"+str(self.threshold)+".png", self.color_img)
+		cv2.imwrite("Results/set"+str(self.dir)+"/"+str(self.threshold)+"/imgResult"+str(self.kok)+".png", self.color_img)
 		self.gradientMatrix = np.array(self.gradientMatrix)

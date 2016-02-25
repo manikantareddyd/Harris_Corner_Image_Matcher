@@ -39,4 +39,5 @@ class matcher:
             pt_a = (int(tkp[i][0]), int(tkp[i][1]))
             pt_b = (int(skp[i][0]+newLENGTH/2), int(skp[i][1]))
             cv2.line(newImg, pt_a, pt_b, (255, 0, 0))
-            cv2.imwrite("Results/set"+str(self.harris1.dir)+"/match_"+str(self.harris1.threshold)+"_"+str(ratio_Threshold)+".png", newImg)
+            cv2.imwrite("Results/set"+str(self.harris1.dir)+"/"+str(self.harris1.threshold)+"/match_"+str(ratio_Threshold)+".png", newImg)
+        self.matching_pairs=[]
