@@ -30,16 +30,16 @@ The threshold on ratio affects the matches exponentially too.
 
 <img src="res/1.png">
 
-<img src="res/2.png">
+<img src="res/2.PNG">
 
-<img src="res/3.png">
+<img src="res/3.PNG">
 
 
 ### Tests
 These are some of the images the tests were run on
 
 #### SET 1
-<img src="res/11.png">
+<img src="res/11.PNG">
 
 + Threshold: 1000000
 + Ratio: 1.15  
@@ -48,7 +48,7 @@ These are some of the images the tests were run on
 + Corners in 2: 4090
 
 #### SET 2
-<img src="res/12.png">
+<img src="res/12.PNG">
 
 + Threshold: 1000000  
 + Ratio: 1.2   
@@ -57,7 +57,7 @@ These are some of the images the tests were run on
 + Corners in 2: 3895
 
 #### SET 3
-<img src="res/13.png">
+<img src="res/13.PNG">
 
 + Threshold: 10000000  
 + Ratio: 1.15   
